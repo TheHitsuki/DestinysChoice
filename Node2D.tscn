@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://ClickableObj.gd" type="Script" id=1]
+[ext_resource path="res://green-box.png" type="Texture" id=2]
+[ext_resource path="res://game.gd" type="Script" id=3]
+
+[node name="game" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
